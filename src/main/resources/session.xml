@@ -28,9 +28,6 @@
         <constructor-arg name="mapper" ref="objectMapper"/>
     </bean>
 
-    <bean id="objectMapper"
-          class="com.fasterxml.jackson.databind.ObjectMapper"/>
-
     <bean id="redisTemplate"
           class="org.springframework.data.redis.core.StringRedisTemplate">
         <property name="connectionFactory" ref="lettuceConnectionFactory"/>

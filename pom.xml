@@ -18,6 +18,8 @@
         <lettuce.version>5.2.0.RELEASE</lettuce.version>
         <spring.session.version>2.2.1.RELEASE</spring.session.version>
 
+        <jackson.version>2.9.7</jackson.version>
+
         <slf4j.version>1.7.16</slf4j.version>
 
         <hikaricp.version>3.3.1</hikaricp.version>
@@ -31,6 +33,13 @@
     </properties>
 
     <dependencies>
+
+        <!-- Apache Commons-->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.5</version>
+        </dependency>
 
         <!-- slf4j -->
         <dependency>
@@ -98,7 +107,12 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.7</version>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
         <!-- Database -->

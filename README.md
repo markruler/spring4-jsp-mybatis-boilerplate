@@ -4,13 +4,24 @@
 
 ```shell
 sudo docker run \
+  --name legacy-db \
   -d \
   -p 5432:5432 \
   -e POSTGRES_USER=mark \
   -e POSTGRES_PASSWORD=ruler \
   -e POSTGRES_DB=legacy \
-  --name legacy-db \
   postgres:11.22-bullseye
+```
+
+## Redis
+
+```shell
+sudo docker run \
+  --name=redis-local \
+  -d \
+  -p 6379:6379 \
+  --restart=always \
+  redis:5.0.13
 ```
 
 ## WAS

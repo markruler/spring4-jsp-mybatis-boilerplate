@@ -55,7 +55,7 @@
         </encoder>
     </appender>
 
-    <!--<logger name="org.springframework" level="DEBUG" additivity="true" />-->
+    <logger name="org.springframework" level="debug     " />
     <!--<logger name="org.springframework.web" level="info">-->
     <!--<logger name="org.springframework.security" level="info">-->
     <logger name="com.markruler" level="debug" />

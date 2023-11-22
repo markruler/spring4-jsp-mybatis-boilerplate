@@ -20,10 +20,10 @@ public class LoginUserDetailService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        // test account - markruler / password
+        // test account - mark / pass
         return User.builder()
-                .username("markruler")
-                .password(passwordEncoder.encode("password"))
+                .username("mark")
+                .password(passwordEncoder.encode("pass"))
                 .authorities("user")
                 .accountExpired(false)
                 .accountLocked(false)

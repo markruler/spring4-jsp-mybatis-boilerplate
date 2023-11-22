@@ -10,8 +10,16 @@
 Login
 <br>
 <form action="/loginProcess" method="post">
-    <input type="text" name="uesrname" placeholder="Type markruler"/>
-    <input type="password" name="password" placeholder="Type password"/>
+    <input
+            type="text"
+            name="uesrname"
+            maxlength="20"
+            placeholder="Type mark"/>
+    <input
+            type="password"
+            name="password"
+            maxlength="20"
+            placeholder="Type pass"/>
     <button type="submit">Sign in</button>
 </form>
 </body>

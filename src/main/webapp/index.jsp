@@ -16,6 +16,7 @@ Hello, World!<br>
     </sec:authorize>
 </div>
 <a href="/users">User</a><br>
+<a href="/files">File Management</a><br>
 <a href="/unknown">Unknown Page</a><br>
 <a href="/logoutProcess">Logout</a>
 </body>
