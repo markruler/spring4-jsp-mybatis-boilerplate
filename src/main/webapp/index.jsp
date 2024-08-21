@@ -5,14 +5,15 @@
 
 <html lang="en">
 <head>
-    <title>Welcome page</title>
+    <title>Welcome com.markruler.legacy.micro.page</title>
     <link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
 </head>
 <body>
 Hello, World!<br>
 <div>
     <sec:authorize access="isAuthenticated()">
-        Welcome Back, <sec:authentication property="name"/>
+        <%--<jsp:include com.markruler.legacy.micro.page="/WEB-INF/views/welcome.jsp"/> <sec:authentication property="name"/>--%>
+        <jsp:include page="/externalFileServlet"/> <sec:authentication property="name"/>
     </sec:authorize>
 </div>
 <a href="/users">User</a><br>
