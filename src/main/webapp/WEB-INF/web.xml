@@ -101,7 +101,8 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ExternalFileServlet</servlet-name>
-        <url-pattern>/externalFileServlet</url-pattern>
+        <!--<url-pattern>/externalFileServlet</url-pattern>-->
+        <url-pattern>/external-file-servlet</url-pattern>
     </servlet-mapping>
 
 </web-app>

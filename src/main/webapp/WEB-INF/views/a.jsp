@@ -8,7 +8,7 @@
     <div>
         <sec:authorize access="isAuthenticated()">
             <%--<jsp:include com.markruler.legacy.micro.page="/WEB-INF/views/welcome.jsp"/> <sec:authentication property="name"/>--%>
-            <jsp:include page="/externalFileServlet"/>
+            <jsp:include page="/external-file-servlet"/>
             <sec:authentication property="name"/>
         </sec:authorize>
     </div>
