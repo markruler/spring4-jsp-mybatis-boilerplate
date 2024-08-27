@@ -11,7 +11,8 @@ import java.io.PrintWriter;
 public class ExternalFileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
-        String filePath = "/Users/cs.im/playground/welcome.jsp";
+        // HttpServlet을 사용하면 굳이 .jsp 페이지일 필요 없음.
+        String filePath = "/tmp/dist/index.html"; // include-react/ 에서 빌드 후 dist/ 디렉토리 복사
         File file = new File(filePath);
 
         if (!file.exists()) {

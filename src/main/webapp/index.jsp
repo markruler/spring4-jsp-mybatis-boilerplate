@@ -9,16 +9,16 @@
     <link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
 </head>
 <body>
-Hello, World!<br>
-<div>
-    <sec:authorize access="isAuthenticated()">
-        <%--<jsp:include com.markruler.legacy.micro.page="/WEB-INF/views/welcome.jsp"/> <sec:authentication property="name"/>--%>
-        <jsp:include page="/externalFileServlet"/> <sec:authentication property="name"/>
-    </sec:authorize>
-</div>
+<h1>Hello, World!</h1>
 <a href="/users">User</a><br>
 <a href="/files">File Management</a><br>
 <a href="/unknown">Unknown Page</a><br>
-<a href="/logoutProcess">Logout</a>
+<a href="/logoutProcess">Logout</a><br>
+
+<div>
+    <h1>include-react 빌드 후</h1>
+    <a href="/a">A-B</a><br>
+    <a href="/c">C-D</a><br>
+</div>
 </body>
 </html>

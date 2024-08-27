@@ -55,13 +55,18 @@
         </encoder>
     </appender>
 
-    <logger name="org.springframework" level="debug     " />
-    <!--<logger name="org.springframework.web" level="info">-->
-    <!--<logger name="org.springframework.security" level="info">-->
-    <logger name="com.markruler" level="debug" />
+    <logger name="org.springframework" level="debug"/>
+    <!--<logger name="org.springframework.web" level="info"/>-->
+    <logger name="org.springframework.security" level="info"/>
 
+    <logger name="com.markruler" level="debug"/>
 
-    <root level="info">
+    <logger name="io.lettuce" level="info"/>
+    <logger name="org.springframework.data.redis" level="info"/>
+
+    <logger name="com.zaxxer.hikari" level="info"/>
+
+    <root level="debug">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="DEFAULT_ROLLING"/>
         <appender-ref ref="ERROR_ROLLING"/>
